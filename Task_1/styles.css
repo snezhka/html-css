@@ -1,3 +1,6 @@
+* {
+    border: 1px solid red;
+}
 body {
     width: 1440px;
     height: auto;
@@ -59,10 +62,6 @@ a {
     font-weight: 400;
 }
 
-.slider_slide_image {
-    z-index: 0;
-}
-
 .slider_slide_description_header {
     font-weight: 500;
     font-size: 55px;
@@ -84,12 +83,13 @@ a {
 
 .slider_slide_radio-buttons {
     display: inline;
-    margin: auto;
-    z-index: 1;
+    position: relative;
+    left: 290px;
 }
 
 .dot {
     cursor: pointer;
+    border-color: gray;
 }
 
 .footer {
