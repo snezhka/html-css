@@ -81,12 +81,11 @@ a {
 .slider_slide_radio-buttons {
     display: inline;
     position: relative;
-    left: 290px;
+    left: 296px;
 }
 
 .dot {
     cursor: pointer;
-    border-color: gray;
 }
 
 .footer {
