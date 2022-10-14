@@ -1,7 +1,7 @@
 body {
     width: 1440px;
     height: auto;
-   // height: 2476px;
+/ / height: 2476 px;
     margin: auto;
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
@@ -49,23 +49,23 @@ a {
     padding: 0 143px;
 }
 
-.slider_slide {
-    display:flex;
+.slide {
+    display: flex;
     justify-content: space-between;
 }
 
-.slider_slide_description {
+.slide_description {
     margin-top: 78px;
     font-weight: 400;
 }
 
-.slider_slide_description_header {
+.slide_description_header {
     font-weight: 500;
     font-size: 55px;
     margin-bottom: 25px;
 }
 
-.slider_slide_button {
+.slide_button {
     text-transform: uppercase;
     background: #FB565A;
     border: none;
@@ -75,17 +75,35 @@ a {
     padding: 17px 54px 15px;
     font-weight: 500;
     color: #FFFFFF;
-    margin-top: 38px;
+    position: relative;
+    top: 48px;
 }
 
-.slider_slide_radio-buttons {
+.slide_radio-buttons {
     display: inline;
     position: relative;
+    top: 48px;
     left: 296px;
 }
 
 .dot {
     cursor: pointer;
+}
+
+.dot:before {
+    -webkit-appearance: none;
+    background: #FFFFFF;
+    width: 18px;
+    height: 18px;
+}
+
+.dot:checked {
+    -webkit-appearance: none;
+    background: #FFFFFF;
+    width: 8px;
+    height: 8px;
+    border: 2px solid #C1C1C1;
+    box-sizing: border-box;
 }
 
 .footer {
@@ -106,11 +124,11 @@ a {
 }
 
 .footer_text {
-    margin:auto;
+    margin: auto;
 }
 
 .footer_text--bold {
     font-weight: 700;
     font-size: 36px;
-    display:inline-block;
+    display: inline-block;
 }
