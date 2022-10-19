@@ -50,6 +50,7 @@ a {
 
 .slide_header {
   position: absolute;
+  width: max-content;
   top: 75px;
   margin: 0;
   font-weight: 500;
@@ -59,6 +60,7 @@ a {
 
 .slide_header + p {
   position: absolute;
+  width: max-content;
   margin: 0;
   top: 210px;
   line-height: 24px;
@@ -66,6 +68,7 @@ a {
 }
 
 .slide_button {
+  display: block;
   position: absolute;
   top: 260px;
   text-transform: uppercase;
@@ -76,7 +79,7 @@ a {
   height: 50px;
   text-align: center;
   padding: 17px 54px 15px;
-  margin-top: 38px;
+  margin: 38px 0;
   box-sizing: border-box;
   font-weight: 500;
   color: #ffffff;
@@ -86,13 +89,6 @@ a {
   float: right;
 }
 
-.slide_radio-buttons {
-  display: inline;
-  position: relative;
-  top: 48px;
-  left: 330px;
-}
-
 .nav-dot {
   width: 0;
   height: 0;
@@ -100,13 +96,14 @@ a {
 .nav-dot + label {
   display: inline-block;
   position: relative;
-  left: 575px;
-  top: -30px;
+  left: 558px;
+  top: 310px;
   margin: 7px;
+  z-index: 1;
 }
 
 .nav-dot:checked + label + .slide {
-  display: block;
+  display: inline;
   position: relative;
 }
 
@@ -144,6 +141,7 @@ a {
   align-items: center;
   gap: 9px;
   padding: 0 140px 68px;
+  margin-bottom: 0;
 }
 
 .footer_image {
