@@ -98,11 +98,11 @@ a {
   height: 0;
 }
 .nav-dot + label {
-  display: inline-flex;
+  display: inline-block;
   position: relative;
   left: 575px;
   top: -30px;
-  margin-left: 20px;
+  margin: 7px;
 }
 
 .nav-dot:checked + label + .slide {
