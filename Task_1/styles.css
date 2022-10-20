@@ -1,10 +1,15 @@
+* {
+  border: 1px solid red;
+}
 body {
   width: 1440px;
   height: auto;
   margin: auto;
   font-family: "Roboto", sans-serif;
+  font-weight: 400;
   font-size: 16px;
-  color: #000000;
+  line-height: 24px;
+  color: #283136;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -56,6 +61,7 @@ a {
   font-weight: 500;
   font-size: 55px;
   line-height: 55px;
+  color: #000000;
 }
 
 .slide_header + p {
@@ -136,6 +142,116 @@ a {
   box-sizing: border-box;
 }
 
+.orders {
+  display: flex;
+  justify-content: space-between;
+  margin: 80px 200px 80px 0;
+}
+
+.order_header {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+  text-transform: uppercase;
+  margin-top: 25px;
+  color: #000000;
+}
+
+.order_header p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  margin-top: 16px;
+}
+
+.order_button {
+  display: block;
+  text-transform: uppercase;
+  background: #fb565a;
+  border: none;
+  border-radius: 3px;
+  width: 160px;
+  height: 50px;
+  text-align: center;
+  padding: 17px 40px 15px;
+  margin: 49px 0;
+  box-sizing: border-box;
+  font-weight: 500;
+  line-height: 18px;
+  color: #ffffff;
+}
+
+.button--red {
+  background-color: #fb565a;
+}
+
+.button--green {
+  background-color: #00ca74;
+}
+
+.button--yellow {
+  background-color: #efc849;
+}
+
+hr {
+  height: 2px;
+  width: 100%;
+  background: #eeeeee;
+  border: none;
+}
+
+.about_nerds {
+  display: flex;
+  justify-content: space-between;
+  margin-right: 200px;
+}
+
+.about_header {
+  font-weight: 500;
+  font-size: 45px;
+  line-height: 45px;
+  margin-top: 73px;
+  color: #000000;
+}
+
+.about p {
+  margin-top: 32px;
+}
+
+strong {
+  margin-top: 40px;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.about ul {
+  padding: 0;
+  /* display: block;
+  width: 399px;
+  height: 120px */
+  margin-top: 23px;
+}
+
+.about hr {
+  display: inline-block;
+  width: 25px;
+  height: 2px;
+  background-color: #fb565a;
+  margin-right: 5px;
+  vertical-align: middle;
+}
+
+.about li {
+  list-style-type: none;
+  margin-bottom: 20px;
+}
+
+.percentage {
+  margin-top: 31px;
+}
+.nerds strong {
+  margin-top: 37px;
+}
 .footer {
   display: flex;
   align-items: center;
