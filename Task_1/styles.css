@@ -379,10 +379,24 @@ hr {
 
 .footer_text {
   margin: auto;
+  width: 585px;
 }
 
 .footer_text--bold {
   font-weight: 700;
   font-size: 36px;
   display: inline-block;
+}
+
+.catalog {
+  background: #eeeeee;
+}
+
+.catalog_header {
+  text-align: center;
+  margin: 72px auto 108px;
+  font-weight: 500;
+  font-size: 55px;
+  line-height: 55px;
+  color: #000000;
 }
