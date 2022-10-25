@@ -58,9 +58,10 @@ hr {
 }
 
 .slide_header {
+  width: 520px;
+  max-width: 538px;
   position: absolute;
-  width: max-content;
-  top: 75px;
+  top: 70px;
   margin: 0;
   font-weight: 500;
   font-size: 55px;
@@ -69,10 +70,10 @@ hr {
 }
 
 .slide_header + p {
-  position: absolute;
-  width: max-content;
+  width: 370px;
+  position: relative;
+  top: 180px;
   margin: 0;
-  top: 210px;
   line-height: 24px;
   font-weight: 400;
 }
@@ -110,12 +111,27 @@ hr {
   width: 0;
   height: 0;
 }
-.nav-dot + label {
+.nav-dot + #label1 {
   display: inline-block;
-  position: relative;
-  left: 558px;
-  top: 310px;
-  margin: 7px;
+  position: absolute;
+  left: 780px;
+  top: 440px;
+  z-index: 1;
+}
+
+.nav-dot + #label2 {
+  display: inline-block;
+  position: absolute;
+  left: 815px;
+  top: 440px;
+  z-index: 1;
+}
+
+.nav-dot + #label3 {
+  display: inline-block;
+  position: absolute;
+  left: 850px;
+  top: 440px;
   z-index: 1;
 }
 
@@ -129,22 +145,21 @@ hr {
 }
 
 .nav-dot + label:before {
-  cursor: pointer;
   position: absolute;
-  left: -50px;
+  cursor: pointer;
   background: #ffffff;
   width: 18px;
   height: 18px;
   border-radius: 50%;
   content: " ";
-  margin: 3px 7px 5px;
+  /* margin: 3px 7px 5px; */
   box-sizing: border-box;
 }
 
 .nav-dot:checked + label:after {
   position: absolute;
-  left: -38px;
-  top: 8px;
+  left: 5px;
+  top: 5px;
   content: " ";
   width: 8px;
   height: 8px;
@@ -168,7 +183,8 @@ hr {
   color: #000000;
 }
 
-.order_header p {
+.order_header + p {
+  max-width: 260px;
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
@@ -237,10 +253,14 @@ hr {
 
 .stats {
   display: flex;
+  justify-content: space-evenly;
 }
 
 .stat {
   margin-right: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
 
 .stat .stat_percentage {
@@ -270,26 +290,22 @@ hr {
   vertical-align: super;
 }
 
-.percent--50 {
-  position: relative;
-  left: -15px;
-}
-
 .clients {
   display: flex;
   justify-content: space-between;
   margin: 46px 183px 44px 172px;
 }
 
-.vl {
-  border-left: 2px solid #eeeeee;
-  height: 52px;
-}
-
 .client-image {
+  padding: 0 20px;
   display: inline-block;
   height: 100%;
   vertical-align: text-bottom;
+  border-right: 2px solid #eeeeee;
+}
+
+.client-image:last-child {
+  border: none;
 }
 
 .contacts {
