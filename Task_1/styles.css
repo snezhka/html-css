@@ -3,8 +3,10 @@ body {
   height: auto;
   margin: auto;
   font-family: "Roboto", sans-serif;
+  font-weight: 400;
   font-size: 16px;
-  color: #000000;
+  line-height: 24px;
+  color: #283136;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -13,6 +15,13 @@ body {
 a {
   color: inherit;
   text-decoration: none;
+}
+
+hr {
+  height: 2px;
+  width: 1158px;
+  background: #eeeeee;
+  border: none;
 }
 
 .header {
@@ -49,40 +58,49 @@ a {
 }
 
 .slide_header {
+  width: 520px;
+  max-width: 538px;
   position: absolute;
-  width: max-content;
-  top: 75px;
+  top: 70px;
   margin: 0;
   font-weight: 500;
   font-size: 55px;
   line-height: 55px;
+  color: #000000;
 }
 
 .slide_header + p {
-  position: absolute;
-  width: max-content;
+  width: 370px;
+  position: relative;
+  top: 180px;
   margin: 0;
-  top: 210px;
   line-height: 24px;
   font-weight: 400;
 }
 
-.slide_button {
+.button {
   display: block;
-  position: absolute;
-  top: 260px;
   text-transform: uppercase;
   background: #fb565a;
   border: none;
   border-radius: 3px;
-  width: 240px;
+  width: 160px;
   height: 50px;
   text-align: center;
-  padding: 17px 54px 15px;
-  margin: 38px 0;
+  padding: 17px 40px 15px;
+  margin: 49px 0;
   box-sizing: border-box;
   font-weight: 500;
+  line-height: 18px;
   color: #ffffff;
+}
+
+.button--slide {
+  position: absolute;
+  top: 260px;
+  width: 240px;
+  padding: 17px 54px 15px;
+  margin: 38px 0;
 }
 
 .slide_image {
@@ -93,12 +111,27 @@ a {
   width: 0;
   height: 0;
 }
-.nav-dot + label {
+.nav-dot + #label1 {
   display: inline-block;
-  position: relative;
-  left: 558px;
-  top: 310px;
-  margin: 7px;
+  position: absolute;
+  left: 780px;
+  top: 440px;
+  z-index: 1;
+}
+
+.nav-dot + #label2 {
+  display: inline-block;
+  position: absolute;
+  left: 815px;
+  top: 440px;
+  z-index: 1;
+}
+
+.nav-dot + #label3 {
+  display: inline-block;
+  position: absolute;
+  left: 850px;
+  top: 440px;
   z-index: 1;
 }
 
@@ -112,22 +145,21 @@ a {
 }
 
 .nav-dot + label:before {
-  cursor: pointer;
   position: absolute;
-  left: -50px;
+  cursor: pointer;
   background: #ffffff;
   width: 18px;
   height: 18px;
   border-radius: 50%;
   content: " ";
-  margin: 3px 7px 5px;
+  /* margin: 3px 7px 5px; */
   box-sizing: border-box;
 }
 
 .nav-dot:checked + label:after {
   position: absolute;
-  left: -38px;
-  top: 8px;
+  left: 5px;
+  top: 5px;
   content: " ";
   width: 8px;
   height: 8px;
@@ -350,6 +382,7 @@ a {
 
 .footer_text {
   margin: auto;
+  width: 585px;
 }
 
 .footer_text--bold {
