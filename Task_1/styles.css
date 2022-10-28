@@ -376,5 +376,6 @@ a {
   flex-direction: column;
 }
 .cards {
-  display: flex
+  display: flex;
+flex-wrap: wrap;
 }
