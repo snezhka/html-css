@@ -1,45 +1,175 @@
 <!DOCTYPE html>
 <html lang="en" xmlns="http://www.w3.org/1999/html">
-  <head>
-    <meta charset="UTF-8" />
-    <title>Nerds</title>
-    <link
-      href="https://fonts.googleapis.com/css?family=Roboto"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" type="text/css" href="styles.css" />
-  </head>
-  <body>
-    <section class="header">
-      <img class="header_image" src="images/nerds-logo.svg" />
-      <ul class="menu">
-        <li class="menu_item"><a href="#">СТУДИЯ</a></li>
-        <li class="menu_item"><a href="#">КЛИЕНТЫ</a></li>
-        <li class="menu_item"><a href="#">МАГАЗИН</a></li>
-        <li class="menu_item"><a href="#">КОНТАКТЫ</a></li>
-      </ul>
-      <a class="header_basket" href="#">
-        <img src="images/cart-icon.svg" /><span>КОРЗИНА</span></a
-      >
-    </section>
-    <section class="catalog">
-      <p class="catalog_header">Магазин готовых шаблонов</p>
-    </section>
-<section class="content">
-  <div class="left-filters"></div>
-  <div class="right-content">
-    <div class="sort"></div>
-    <div class="cards"></div>
-  </div>
-</section>
-    <section class="footer">
-      <a class="footer_image" href="#"><img src="images/vk-icon.png" /></a>
-      <a class="footer_image" href="#"><img src="images/fb-icon.png" /></a>
-      <a class="footer_image" href="#"><img src="images/insta-icon.png" /></a>
-      <div class="footer_text">
-        <span class="footer_text--bold"> Давайте дружить, это выгодно!</span>
-        Скидка 10% для друзей из социальных сетей.
-      </div>
-    </section>
-  </body>
+	<head>
+		<meta charset="UTF-8" />
+		<title>Nerds</title>
+		<link
+			href="https://fonts.googleapis.com/css?family=Roboto"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" type="text/css" href="styles.css" />
+	</head>
+	<body>
+		<section class="header">
+			<img class="header_image" src="images/nerds-logo.svg" />
+			<ul class="menu">
+				<li class="menu_item"><a href="#">СТУДИЯ</a></li>
+				<li class="menu_item"><a href="#">КЛИЕНТЫ</a></li>
+				<li class="menu_item"><a href="#">МАГАЗИН</a></li>
+				<li class="menu_item"><a href="#">КОНТАКТЫ</a></li>
+			</ul>
+			<a class="header_basket" href="#">
+				<img src="images/cart-icon.svg" /><span>КОРЗИНА</span></a
+			>
+		</section>
+		<section class="catalog">
+			<p class="catalog_header">Магазин готовых шаблонов</p>
+		</section>
+		<section class="content">
+			<div class="left-filters">
+				<form action="" method="get" name="left-filters">
+					<div class="price">
+						<p class="small-header">Стоимость:</p>
+						<div class="fslider">
+							<div class="fslider_circle fslider_circle--first">
+								<div
+									class="fslider_circle_small fslider_circle_small--first"
+								></div>
+							</div>
+							<div class="fslider_circle fslider_circle--second">
+								<div
+									class="fslider_circle_small fslider_circle_small--second"
+								></div>
+							</div>
+							<div class="fslider_line fslider_line--green"></div>
+							<div class="fslider_line fslider_line--gray"></div>
+						</div>
+						<div class="price-range">
+							<label for="price-from">ОТ</label>
+							<input
+								type="text"
+								class="price-range_from"
+								name="price-from"
+								value="0"
+							/>
+							<label for="price-to">ДО</label>
+							<input
+								type="text"
+								class="price-range_to"
+								name="price-to"
+								value="15000"
+							/>
+						</div>
+					</div>
+					<div class="grid">
+						<p class="small-header">Сетка:</p>
+						<label for="grid-item-1" class="grid_label">
+							Адаптивная
+							<input
+								type="radio"
+								id="grid-item-1"
+								name="grid-item"
+								value="adapted"
+								checked
+							/>
+							<span class="grid_dot"></span>
+						</label>
+						<label for="grid-item-2" class="grid_label">
+							Фиксированная
+							<input
+								type="radio"
+								id="grid-item-2"
+								name="grid-item"
+								value="fixed"
+							/>
+							<span class="grid_dot"></span>
+						</label>
+						<label for="grid-item-3" class="grid_label">
+							Резиновая
+							<input
+								type="radio"
+								id="grid-item-3"
+								name="grid-item"
+								value="stretched"
+							/>
+							<span class="grid_dot"></span>
+						</label>
+					</div>
+					<div class="details">
+						<p class="small-header">Особенности:</p>
+						<label class="details_label" for="details-item-1"
+							>Слайдер
+							<input
+								type="checkbox"
+								id="details-item-1"
+								name="details-item"
+								value="slider"
+								checked="checked"
+							/>
+							<span class="details_checkmark"></span>
+						</label>
+
+						<label class="details_label" for="details-item-2"
+							>Блок преимуществ
+							<input
+								type="checkbox"
+								id="details-item-2"
+								name="details-item"
+								value="block"
+							/>
+							<span class="details_checkmark"></span>
+						</label>
+
+						<label class="details_label" for="details-item-3"
+							>Новости
+							<input
+								type="checkbox"
+								id="details-item-3"
+								name="details-item"
+								value="news"
+								checked
+							/>
+							<span class="details_checkmark"></span>
+						</label>
+
+						<label class="details_label" for="details-item-4"
+							>Галерея
+							<input
+								type="checkbox"
+								id="details-item-4"
+								name="details-item"
+								value="gallery"
+							/>
+							<span class="details_checkmark"></span>
+						</label>
+
+						<label class="details_label" for="details-item-5"
+							>Корзина
+							<input
+								type="checkbox"
+								id="details-item-5"
+								name="details-item"
+								value="basket"
+							/>
+							<span class="details_checkmark"></span>
+						</label>
+					</div>
+					<input type="submit" value="Показать" />
+				</form>
+			</div>
+			<div class="right-content">
+				<div class="sort"></div>
+				<div class="cards"></div>
+			</div>
+		</section>
+		<section class="footer">
+			<a class="footer_image" href="#"><img src="images/vk-icon.png" /></a>
+			<a class="footer_image" href="#"><img src="images/fb-icon.png" /></a>
+			<a class="footer_image" href="#"><img src="images/insta-icon.png" /></a>
+			<div class="footer_text">
+				<span class="footer_text--bold"> Давайте дружить, это выгодно!</span>
+				Скидка 10% для друзей из социальных сетей.
+			</div>
+		</section>
+	</body>
 </html>
