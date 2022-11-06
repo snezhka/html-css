@@ -11,23 +11,33 @@
 	</head>
 	<body>
 		<section class="header">
-			<img class="header_image" src="images/nerds-logo.svg" />
+			<a href="index.html"
+				><img class="header_image" src="images/nerds-logo.svg"
+			/></a>
 			<ul class="menu">
 				<li class="menu_item"><a href="#">СТУДИЯ</a></li>
 				<li class="menu_item"><a href="#">КЛИЕНТЫ</a></li>
-				<li class="menu_item"><a href="#">МАГАЗИН</a></li>
+				<li class="menu_item menu_item--active">
+					<a href="#">МАГАЗИН</a>
+					<div class="underline"></div>
+				</li>
 				<li class="menu_item"><a href="#">КОНТАКТЫ</a></li>
 			</ul>
 			<a class="header_basket" href="#">
-				<img src="images/cart-icon.svg" /><span>КОРЗИНА</span></a
-			>
+				<img src="images/cart-icon.svg" />
+				<span class="menu_item">КОРЗИНА</span>
+			</a>
 		</section>
 		<section class="catalog">
 			<p class="catalog_header">Магазин готовых шаблонов</p>
 		</section>
 		<section class="content">
 			<div class="left-filters">
-				<form action="" method="get" name="left-filters">
+				<form
+					action="https://echo.htmlacademy.ru/"
+					method="get"
+					name="left-filters"
+				>
 					<div class="price">
 						<p class="small-header">Стоимость:</p>
 						<div class="fslider">
@@ -64,7 +74,6 @@
 					<div class="grid">
 						<p class="small-header">Сетка:</p>
 						<label for="grid-item-1" class="grid_label">
-							Адаптивная
 							<input
 								type="radio"
 								id="grid-item-1"
@@ -72,16 +81,17 @@
 								value="adapted"
 								checked
 							/>
+							<span class="grid_text">Адаптивная</span>
 							<span class="grid_dot"></span>
 						</label>
 						<label for="grid-item-2" class="grid_label">
-							Фиксированная
 							<input
 								type="radio"
 								id="grid-item-2"
 								name="grid-item"
 								value="fixed"
 							/>
+							<span class="grid_text">Фиксированная</span>
 							<span class="grid_dot"></span>
 						</label>
 						<label for="grid-item-3" class="grid_label">
@@ -97,8 +107,7 @@
 					</div>
 					<div class="details">
 						<p class="small-header">Особенности:</p>
-						<label class="details_label" for="details-item-1"
-							>Слайдер
+						<label class="details_label" for="details-item-1">
 							<input
 								type="checkbox"
 								id="details-item-1"
@@ -106,22 +115,22 @@
 								value="slider"
 								checked="checked"
 							/>
+							<span class="grid_text">Слайдер</span>
 							<span class="details_checkmark"></span>
 						</label>
 
-						<label class="details_label" for="details-item-2"
-							>Блок преимуществ
+						<label class="details_label" for="details-item-2">
 							<input
 								type="checkbox"
 								id="details-item-2"
 								name="details-item"
 								value="block"
 							/>
+							<span class="grid_text">Блок преимуществ</span>
 							<span class="details_checkmark"></span>
 						</label>
 
-						<label class="details_label" for="details-item-3"
-							>Новости
+						<label class="details_label" for="details-item-3">
 							<input
 								type="checkbox"
 								id="details-item-3"
@@ -129,38 +138,282 @@
 								value="news"
 								checked
 							/>
+							<span class="grid_text">Новости</span>
 							<span class="details_checkmark"></span>
 						</label>
 
-						<label class="details_label" for="details-item-4"
-							>Галерея
+						<label class="details_label" for="details-item-4">
 							<input
 								type="checkbox"
 								id="details-item-4"
 								name="details-item"
 								value="gallery"
 							/>
+							<span class="grid_text">Галерея</span>
 							<span class="details_checkmark"></span>
 						</label>
 
-						<label class="details_label" for="details-item-5"
-							>Корзина
+						<label class="details_label" for="details-item-5">
 							<input
 								type="checkbox"
 								id="details-item-5"
 								name="details-item"
 								value="basket"
 							/>
+							<span class="grid_text">Корзина</span>
 							<span class="details_checkmark"></span>
 						</label>
 					</div>
-					<input type="submit" value="Показать" />
+					<input type="submit" class="show-button" value="Показать" />
 				</form>
 			</div>
 			<div class="right-content">
-				<div class="sort"></div>
-				<div class="cards"></div>
+				<div class="sort">
+					<div class="small-header">Сортировать:</div>
+					<div class="sort_type">
+						<a href="#" class="sort_type--active">По цене</a>
+						<a href="#">По типу</a>
+						<a href="#">По названию</a>
+						<span>
+							<a class="sort_arrow sort_arrow--desc"></a>
+							<a class="sort_arrow sort_arrow--asc"></a>
+						</span>
+					</div>
+				</div>
+				<div class="cards">
+					<div class="card">
+						<div class="card_buttons">
+							<input
+								type="radio"
+								class="nav-dot"
+								id="card-radio-1"
+								name="slide"
+								value="slide1"
+							/>
+							<label for="card-radio-1" id="card-label-1"></label>
+							<input
+								type="radio"
+								class="nav-dot"
+								id="card-radio-2"
+								name="slide"
+								value="slide2"
+							/>
+							<label for="card-radio-2" id="card-label-2"></label>
+							<input
+								type="radio"
+								class="nav-dot"
+								id="card-radio-3"
+								name="slide"
+								value="slide3"
+							/>
+							<label for="card-radio-3" id="card-label-3"></label>
+						</div>
+						<img src="images/cards/img-sedona.png" class="card_image" alt="" />
+						<div class="card_name">
+							<a href="#" class="small-header card_name-text">SEDONA</a>
+							<p>Информационный сайт для туристов</p>
+							<a href="" class="button">9 900 ₽</a>
+						</div>
+					</div>
+					<div class="card">
+						<div class="card_buttons">
+							<input
+								type="radio"
+								class="nav-dot"
+								id="card-radio-1"
+								name="slide"
+								value="slide1"
+							/>
+							<label for="card-radio-1" id="card-label-1"></label>
+							<input
+								type="radio"
+								class="nav-dot"
+								id="card-radio-2"
+								name="slide"
+								value="slide2"
+							/>
+							<label for="card-radio-2" id="card-label-2"></label>
+							<input
+								type="radio"
+								class="nav-dot"
+								id="card-radio-3"
+								name="slide"
+								value="slide3"
+							/>
+							<label for="card-radio-3" id="card-label-3"></label>
+						</div>
+						<img src="images/cards/img-pink.png" class="card_image" alt="" />
+						<div class="card_name">
+							<a href="#" class="small-header card_name-text">Pink App</a>
+							<p>Продуктовый лендинг приложения для iOS и Android</p>
+							<a href="" class="button">9 900 ₽</a>
+						</div>
+					</div>
+					<div class="card">
+						<div class="card_buttons">
+							<input
+								type="radio"
+								class="nav-dot"
+								id="card-radio-1"
+								name="slide"
+								value="slide1"
+							/>
+							<label for="card-radio-1" id="card-label-1"></label>
+							<input
+								type="radio"
+								class="nav-dot"
+								id="card-radio-2"
+								name="slide"
+								value="slide2"
+							/>
+							<label for="card-radio-2" id="card-label-2"></label>
+							<input
+								type="radio"
+								class="nav-dot"
+								id="card-radio-3"
+								name="slide"
+								value="slide3"
+							/>
+							<label for="card-radio-3" id="card-label-3"></label>
+						</div>
+						<img
+							src="images/cards/img-barbershop.png"
+							class="card_image"
+							alt=""
+						/>
+						<div class="card_name">
+							<a href="#" class="small-header card_name-text">Barbershop</a>
+							<p>Сайт салона красоты. Для мужчин, да.</p>
+							<a href="" class="button">9 900 ₽</a>
+						</div>
+					</div>
+					<div class="card">
+						<div class="card_buttons">
+							<input
+								type="radio"
+								class="nav-dot"
+								id="card-radio-1"
+								name="slide"
+								value="slide1"
+							/>
+							<label for="card-radio-1" id="card-label-1"></label>
+							<input
+								type="radio"
+								class="nav-dot"
+								id="card-radio-2"
+								name="slide"
+								value="slide2"
+							/>
+							<label for="card-radio-2" id="card-label-2"></label>
+							<input
+								type="radio"
+								class="nav-dot"
+								id="card-radio-3"
+								name="slide"
+								value="slide3"
+							/>
+							<label for="card-radio-3" id="card-label-3"></label>
+						</div>
+						<img src="images/cards/img-mishka.png" class="card_image" alt="" />
+						<div class="card_name">
+							<a href="#" class="small-header card_name-text">MISHKA</a>
+							<p>Интернет-магазин  вязаных игрушек</p>
+							<a href="" class="button">9 900 ₽</a>
+						</div>
+					</div>
+					<div class="card">
+						<div class="card_buttons">
+							<input
+								type="radio"
+								class="nav-dot"
+								id="card-radio-1"
+								name="slide"
+								value="slide1"
+							/>
+							<label for="card-radio-1" id="card-label-1"></label>
+							<input
+								type="radio"
+								class="nav-dot"
+								id="card-radio-2"
+								name="slide"
+								value="slide2"
+							/>
+							<label for="card-radio-2" id="card-label-2"></label>
+							<input
+								type="radio"
+								class="nav-dot"
+								id="card-radio-3"
+								name="slide"
+								value="slide3"
+							/>
+							<label for="card-radio-3" id="card-label-3"></label>
+						</div>
+						<img src="images/cards/img-aplus.png" class="card_image" alt="" />
+						<div class="card_name">
+							<a href="#" class="small-header card_name-text">A Plus</a>
+							<p>Лендинг курсов повышения квалификации</p>
+							<a href="" class="button">9 900 ₽</a>
+						</div>
+					</div>
+					<div class="card">
+						<div class="card_buttons">
+							<input
+								type="radio"
+								class="nav-dot"
+								id="card-radio-1"
+								name="slide"
+								value="slide1"
+							/>
+							<label for="card-radio-1" id="card-label-1"></label>
+							<input
+								type="radio"
+								class="nav-dot"
+								id="card-radio-2"
+								name="slide"
+								value="slide2"
+							/>
+							<label for="card-radio-2" id="card-label-2"></label>
+							<input
+								type="radio"
+								class="nav-dot"
+								id="card-radio-3"
+								name="slide"
+								value="slide3"
+							/>
+							<label for="card-radio-3" id="card-label-3"></label>
+						</div>
+						<img src="images/cards/img-kvast.png" class="card_image" alt="" />
+						<div class="card_name">
+							<a href="#" class="small-header card_name-text">КВАСТ</a>
+							<p>Промо-сайт производителя крафтового кваса</p>
+							<a href="" class="button">9 900 ₽</a>
+						</div>
+					</div>
+				</div>
+				<div class="pagination">
+					<a href="#" class="pagination_button pagination_button--active">
+						<span>1</span></a
+					>
+					<a href="#" class="pagination_button"> <span>2</span></a>
+					<a href="#" class="pagination_button"> <span>3</span></a>
+					<a href="#" class="pagination_button next-button">
+						<span>Следующая</span>
+					</a>
+				</div>
 			</div>
+		</section>
+		<section class="contacts">
+			<img src="images/map.png" />
+			<div class="contact-form">
+				<p class="small-header">Nerds design studio</p>
+				<p>
+					191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 тел. +7 (812)
+					275-75-75
+				</p>
+				<a href="#" class="button button--contact"><span>Напишите нам</span></a>
+			</div>
+			<img src="images/map-marker.png" />
+			<div class="write-us"></div>
 		</section>
 		<section class="footer">
 			<a class="footer_image" href="#"><img src="images/vk-icon.png" /></a>
